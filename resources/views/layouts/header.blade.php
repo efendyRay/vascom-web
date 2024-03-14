@@ -35,8 +35,8 @@
                 <div class="d-flex align-items-center ms-1 ms-lg-3 mt-3" id="kt_header_user_menu_toggle">
                     <!--begin::Menu wrapper-->
                     <div class="d-flex flex-column me-3">
-                        <div class="d-flex align-items-center text-primary fs-5">user</div>
-                        <a href="#" class="text-muted text-black fs-7">user@gmail.com</a>
+                        <div class="d-flex align-items-center text-primary fs-5">{{ $user_get['name'] }}</div>
+                        <a href="#" class="text-muted text-black fs-7">{{ $user_get['email'] }}</a>
                     </div>
                     <div class="cursor-pointer symbol symbol-30px symbol-md-40px" data-kt-menu-trigger="click" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end">
                         <img src="{{ asset('img/profile.png') }}" alt="user" />

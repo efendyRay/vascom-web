@@ -22,7 +22,9 @@ class DashboardController extends Controller
 
             $results = $data['data'];
 
-            return view('dashboard', compact('results'));
+            $user_get = $request->session()->get('api-auth')['user'];
+
+            return view('dashboard', compact('results', 'user_get'));
 
         } catch (\Exception $e) {
             return view('error', ['message' => $e->getResponse()->getStatusCode() .' '. $e->getResponse()->getReasonPhrase()]);

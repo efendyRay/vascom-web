@@ -7,9 +7,11 @@ use GuzzleHttp\Exception\RequestException;
 
 class ProductController extends Controller
 {
-    public function list(){
+    public function list(Request $request){
 
-        return view('products.list');
+        $user_get = $request->session()->get('api-auth')['user'];
+
+        return view('products.list', compact('user_get'));
     }
     public function index(Request $request)
     {    

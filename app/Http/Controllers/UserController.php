@@ -6,9 +6,10 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    public function list(){
-        
-        return view('users.list');
+    public function list(Request $request){
+        $user_get = $request->session()->get('api-auth')['user'];
+
+        return view('users.list', compact('user_get'));
     }
 
     public function index(Request $request)

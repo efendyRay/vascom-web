@@ -30,6 +30,7 @@ class AuthController extends Controller
             if($data['code'] === 200){
                 $credentials = [
                     'token' => $data['data']['token'],
+                    'user' => $data['data']['user'],
                 ];
                 $request->session()->put('api-auth', $credentials);
             } else {
