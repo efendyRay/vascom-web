@@ -11,7 +11,7 @@
                     <h4 class="font-weight-normal mb-3">Jumlah User <i
                             class="mdi mdi-chart-line mdi-24px float-right"></i>
                     </h4>
-                    <h4 class="mb-5">0
+                    <h4 class="mb-5">{{ $total_user }}
                     </h4>
                 </div>
             </div>
@@ -23,7 +23,7 @@
                     <h4 class="font-weight-normal mb-3">Jumlah User Aktif <i
                             class="mdi mdi-vector-combine mdi-24px float-right"></i>
                     </h4>
-                    <h4 class="mb-5">0</h4>
+                    <h4 class="mb-5">{{ $total_user_aktif }}</h4>
                 </div>
             </div>
         </div>
@@ -34,7 +34,7 @@
                     <h4 class="font-weight-normal mb-3">Jumlah Produk <i
                             class="mdi mdi-human-greeting mdi-24px float-right"></i>
                     </h4>
-                    <h4 class="mb-5">0</h4>
+                    <h4 class="mb-5">{{ $total_produk }}</h4>
                 </div>
             </div>
         </div>
@@ -44,7 +44,7 @@
                    
                     <h4 class="font-weight-normal mb-3">Jumlah Produk Aktif
                     </h4>
-                    <h4 class="mb-5">0</h4>
+                    <h4 class="mb-5">{{ $total_produk_aktif }}</h4>
                 </div>
             </div>
         </div>
